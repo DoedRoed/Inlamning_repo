@@ -1,5 +1,4 @@
 import java.io.Console;
-
 /**
  * Assignment 1 - Guessing Game
  * 
@@ -24,7 +23,7 @@ public class Guesser
    */
   
   // Write the constructor below this line.
-  public Guesser(int high, int low)
+  public Guesser( int low, int high)
   {
     this.low = low;
     this.high = high;
@@ -98,11 +97,14 @@ public class Guesser
       System.out.println("Is the number less than or equal to " +
                          middle + "?");
       String reply = getReply();
-      if("T".equalsIgnoreCase(reply)){
+      if("T".equalsIgnoreCase(reply))
+      {
         // The number is less than or equal to middle
         // so we move down high to middle
         high = middle;
-      }else{
+      }
+      else
+      {
         // The number is greater than middle,
         // so we move up low to middle + 1
         low = middle + 1;
@@ -114,7 +116,8 @@ public class Guesser
     answer(low, i);
   }
 
-  private void answer(int guess, int numberOfGuesses){
+  private void answer(int guess, int numberOfGuesses)
+  {
     System.out.println("You were thinking about " +
                        guess +
                        " (took me " + numberOfGuesses +
