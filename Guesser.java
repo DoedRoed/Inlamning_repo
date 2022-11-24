@@ -65,28 +65,31 @@ public class Guesser
    */
   private String getReply()
   {
-    try (Scanner input = new Scanner(System.in)) {
-      
-    } catch (Exception e) {
-      // TODO: handle exception
-    }
     String reply = null;
-    while(true)
+    try (Scanner input = new Scanner(System.in)) 
     {
-      reply = input.nextLine();
-      if("T".equalsIgnoreCase(reply) || "F".equalsIgnoreCase(reply))
+      while(true)
       {
-        break;
+        reply = input.nextLine();
+        if("T".equalsIgnoreCase(reply) || "F".equalsIgnoreCase(reply))
+        {
+          break;
+        }
+        else
+        {
+          System.err.println("Error only accept 'T' or 'F' try again ");
+        }
       }
-      else
-      {
-        System.err.println("Error only accept 'T' or 'F' try again ");
-      }
+      // Write code here which reads a String from the console.
+      // As long as it is not a valid reply (one of "T" and "F")
+      // write an error message, and read a new reply.
+      // When you have gotten a valid reply, return it.
+      
+    } catch (Exception e) 
+    {
+      // TODO: handle exception
+      e.getStackTrace();
     }
-    // Write code here which reads a String from the console.
-    // As long as it is not a valid reply (one of "T" and "F")
-    // write an error message, and read a new reply.
-    // When you have gotten a valid reply, return it.
     return reply;
   }
 
