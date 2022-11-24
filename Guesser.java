@@ -63,8 +63,13 @@ public class Guesser
    * a valid reply. Return the String that you read from
    * the player.
    */
-  private String getReply(Scanner input)
+  private String getReply()
   {
+    try (Scanner input = new Scanner(System.in)) {
+      
+    } catch (Exception e) {
+      // TODO: handle exception
+    }
     String reply = null;
     while(true)
     {
