@@ -7,7 +7,8 @@ import java.io.Console;
  * for the Guesser class. It is your
  * task to complete the missing parts.
  */
-public class Guesser{
+public class Guesser
+{
   private int low;
   private int high;
 
@@ -23,7 +24,11 @@ public class Guesser{
    */
   
   // Write the constructor below this line.
-
+  public Guesser(int high, int low)
+  {
+    this.low = low;
+    this.high = high;
+  }
 
   /*
    * Task 2. Complete the start() method, so that
