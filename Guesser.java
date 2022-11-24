@@ -35,12 +35,16 @@ public class Guesser
    * in the method body, you call first the
    * rules() method, next the doGuesses() method.
    */
-  public void start(){
+  public void start()
+  {
     // call the rules method here
+    rules();
     // call the doGuesses() method here
+    doGuesses();
   }
 
-  private void rules(){
+  private void rules()
+  {
     System.out.println("Think of a number between " +
                        low + " and "  + high);
     System.out.println("I'm going to ask a few questions in order " +
