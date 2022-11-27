@@ -1,0 +1,33 @@
+När använder man add respektive commit?
+------------------------------------------------
+
+add när du vill välja filer att lägga till i staging area / index
+
+commit när du vill uppdatera/lägga till filerna från index till din local respository.
+
+
+Vad är pull repektive push?
+------------------------------------------------
+
+pull när du vill dra ner filer från en remote repository till din workspace.
+
+push när du vill uppdatera en remote repository med din local repository.
+
+När använder man log respektive status?
+------------------------------------------------
+
+log för att kolla gamla commits
+
+status för att kolla vad som ligger under index / staging area.
+
+
+Hur kan man formulera sig i sina commit-meddelanden?
+------------------------------------------------
+Inte så jag skrivit dom.
+
+Imperativ 
+
+vad man ändrat och varför inte hur.
+Kort rubrik med stor bokstav ingen punkt 
+
+inte för lång brödtext om brödtext skulle behövas.
